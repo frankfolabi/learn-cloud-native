@@ -50,25 +50,18 @@ sudo apt install -y git
 sudo apt install -y python3 python3-pip
 ```
 ### 5.  Install kubectl
-```bash
-curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-chmod +x kubectl
-sudo mv kubectl /usr/local/bin/
+Use this guide for your kubectl and Kind as well as your cluster
+  - https://k8s-kind-setup.hashnode.dev/title-getting-started-with-kubernetes-using-kind-kubernetes-in-docker
 ```
 
-### 6. Install kind (Kubernetes in Docker)
-```bash
-curl -Lo ./kind https://kind.sigs.k8s.io/dl/latest/kind-linux-amd64
-chmod +x ./kind
-sudo mv ./kind /usr/local/bin/
-```
-
-### 7. Install Helm (Package manager for K8s)
+### 6. Install Helm (Package manager for K8s)
 ```
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ```
 
-### 8. System Check 
+<img width="442" alt="image" src="https://github.com/user-attachments/assets/28d68a8f-daf6-4462-942c-a266416110bd" />
+
+### 7. System Check 
 
 ```
 docker --version
@@ -78,7 +71,7 @@ helm version
 git --version
 ```
 
-### 9.  Optional but helpful
+### 8.  Optional but helpful
 - [x] Install Visual Studio Code on your Local PC (for Remote SSH extension)
 
 - [x] Install tmux on your VM, for managing multiple sessions
