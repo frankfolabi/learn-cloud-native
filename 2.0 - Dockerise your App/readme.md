@@ -52,9 +52,10 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 
 ### 4. Build your image
-A dockerfile is already provided in the project repo, however, feel free to modify it to suit your needs.
+A Dockerfile is already provided in the project repo; however, feel free to modify it to suit your needs.
+
 ✅ Build the image 
-✅ and run it locally
+<br>✅ and run it locally<br>
 ✅ Push to to your dockerhub 
 
 ***Not familiar with docker? Check out this free course at kodekloud - https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner***
