@@ -18,7 +18,7 @@ Ensure the following are already installed in your VM (from [1.0 - Set Up Your E
 - Git  
 - Python 3 & Pip  
 - Kubernetes tools (kubectl, kind)  
-- A MongoDB Atlas cluster with your connection string
+  
 
 ---
 
@@ -30,18 +30,20 @@ Ensure the following are already installed in your VM (from [1.0 - Set Up Your E
 git clone https://github.com/ChisomJude/student-project-tracker.git
 cd student-project-tracker
 
-### 2. Set Up Environment Variables
-Create a .env file in the project root:
-
-```env
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/cloud_native?retryWrites=true&w=majority
-# We are using a central db, vault credentials will be provided in the Class Group, if you aren't part of the class you can create yours
+### 2. Ensure you can connect to vault Server
 ```
+curl http://<vaultip>:8200/v1/sys/health
+```
+***We are using a central db, vault token and IP  will be provided in the Class Group, if you aren't part of the class you can create yours***
 
-### 3. Run Locally (Optional Test)
+
+### 3. Run Locally 
 To test the app locally before Dockerizing:
 
 ```bash
+sudo apt update
+sudo apt install python3-venv -y
+
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
