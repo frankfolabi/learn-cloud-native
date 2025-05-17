@@ -29,11 +29,13 @@ Ensure the following are already installed in your VM (from [1.0 - Set Up Your E
 ```bash
 git clone https://github.com/ChisomJude/student-project-tracker.git
 cd student-project-tracker
+```
 
-### 2. Ensure you can connect to vault Server
+### 2. Ensure you can connect to the vault Server
 ```
 curl http://<vaultip>:8200/v1/sys/health
 ```
+
 ***We are using a central db, vault token and IP  will be provided in the Class Group, if you aren't part of the class you can create yours***
 
 
