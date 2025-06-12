@@ -1,0 +1,25 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+backend.tf
+
+# SSH keys
+*.pem
+*.key
+*.crt
+
+# Environment files
+*.env
+
+# Linux files
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+
+
+
