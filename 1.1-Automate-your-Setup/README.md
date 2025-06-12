@@ -81,7 +81,7 @@ kubectl config use-context kind-tws-cluster
 sudo apt install -y tmux
 ```
 
-* Other useful commands with tmux
+**Other useful commands with tmux**
 ```
 # start a session
 tmux new -s mysession
@@ -92,6 +92,26 @@ tmux ls
 #attach a session
 tmux attach -t mysession
 ```
+
+### 5.  Stopping the VM
+
+In order to save cost, you can start and stop the instance when not in use. You can configure the [start-stop-instance.sh](./start-stop-instance.sh) to reflect the region you are using. 
+
+
+> Note: Always remember to stop your instances when not in use. Cloud cost can quickly accumulate.
+
+```
+bash start-stop-instance.sh
+```
+
+### 6.  Clean Up
+
+After the project clean up your environment 
+
+```
+terraform destroy
+``` 
+
 
 Enjoy the k8s journey with me!
 ---
